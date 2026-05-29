@@ -49,14 +49,15 @@
     nodes.links.replaceChildren();
     (config.links || []).forEach(function (link) {
       var item = document.createElement("a");
-      item.className = "link-card";
+      item.className = link.image || link.icon ? "link-card has-media" : "link-card";
       item.href = link.url;
       item.target = "_blank";
       item.rel = "noreferrer";
       item.dataset.trackLabel = link.title;
       item.dataset.trackKind = "featured";
       item.innerHTML =
-        '<span class="tag"></span><span class="title"></span><span class="description"></span><span class="arrow" aria-hidden="true">-></span>';
+        '<span class="link-media" aria-hidden="true"></span><span class="tag"></span><span class="title"></span><span class="description"></span><span class="arrow" aria-hidden="true">-></span>';
+      renderLinkMedia(item.querySelector(".link-media"), link);
       item.querySelector(".tag").textContent = link.tag || "Link";
       item.querySelector(".title").textContent = link.title;
       item.querySelector(".description").textContent = link.description || link.url;
@@ -66,6 +67,20 @@
 
     nodes.textarea.value = JSON.stringify(config, null, 2);
     renderStats();
+  }
+
+  function renderLinkMedia(media, link) {
+    if (link.image) {
+      var image = document.createElement("img");
+      image.src = link.image.src || link.image;
+      image.alt = "";
+      media.appendChild(image);
+      return;
+    }
+
+    if (link.icon) {
+      media.textContent = link.icon;
+    }
   }
 
   function createTrackedLink(label, url, kind) {

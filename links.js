@@ -25,13 +25,17 @@ window.LINKS_CONFIG = {
       title: "Featured project",
       description: "Swap this for the thing you most want people to click first.",
       url: "https://example.com",
-      tag: "Project"
+      tag: "Project",
+      image: {
+        src: "assets/avatar.svg"
+      }
     },
     {
       title: "Writing or notes",
       description: "A good spot for a blog, newsletter, long post, or technical write-up.",
       url: "https://example.com",
-      tag: "Writing"
+      tag: "Writing",
+      icon: "W"
     },
     {
       title: "Something fun",
