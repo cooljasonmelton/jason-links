@@ -2,6 +2,28 @@
 
 A zero-dependency personal link hub. It is just static files, so it can run from disk and deploy for free on GitHub Pages or Cloudflare Pages.
 
+## Run locally
+
+No install or build step is required.
+
+Open `index.html` directly in a browser, or run a small static server from this directory:
+
+```sh
+python3 -m http.server 8080
+```
+
+Then visit:
+
+```text
+http://localhost:8080
+```
+
+To open the local preview editor:
+
+```text
+http://localhost:8080/#edit
+```
+
 ## Edit links
 
 The published source of truth is `links.js`.
