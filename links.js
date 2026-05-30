@@ -1,50 +1,61 @@
 window.LINKS_CONFIG = {
-  name: "Jason",
-  eyebrow: "Projects, notes, and internet things",
-  bio: "A small hub for the useful, weird, and polished things I have made or want people to find.",
+  name: "JASON MELTON",
+  eyebrow: "comedian",
+  bio: "",
   avatar: {
-    src: "assets/avatar.svg",
-    alt: "Jason monogram"
+    src: "assets/avatar.jpeg",
+    alt: "Jason Melton",
   },
   socials: [
     {
-      label: "GitHub",
-      url: "https://github.com/"
+      label: "Instagram",
+      url: "https://www.instagram.com/cooljasonmelton/",
     },
     {
-      label: "LinkedIn",
-      url: "https://www.linkedin.com/"
+      label: "YouTube",
+      url: "https://www.youtube.com/@jasonmeltoncomedyvids/",
+    },
+    {
+      label: "X",
+      url: "https://x.com/cooljasonmelton",
+    },
+    {
+      label: "Twitch",
+      url: "https://www.twitch.tv/jasonmeltontwitch",
     },
     {
       label: "Email",
-      url: "mailto:hello@example.com"
-    }
+      url: "mailto:jasonmeltoncomedy@gmail.com",
+    },
   ],
   links: [
     {
       title: "Featured project",
-      description: "Swap this for the thing you most want people to click first.",
+      description:
+        "Swap this for the thing you most want people to click first.",
       url: "https://example.com",
       tag: "Project",
       image: {
-        src: "assets/avatar.svg"
-      }
+        src: "assets/avatar.svg",
+      },
     },
     {
       title: "Writing or notes",
-      description: "A good spot for a blog, newsletter, long post, or technical write-up.",
+      description:
+        "A good spot for a blog, newsletter, long post, or technical write-up.",
       url: "https://example.com",
       tag: "Writing",
-      icon: "W"
+      icon: "W",
     },
     {
       title: "Something fun",
-      description: "Use this for a demo, playlist, experiment, talk, portfolio piece, or shop.",
+      description:
+        "Use this for a demo, playlist, experiment, talk, portfolio piece, or shop.",
       url: "https://example.com",
-      tag: "Cool stuff"
-    }
+      tag: "Cool stuff",
+    },
   ],
   analytics: {
-    cloudflareToken: ""
-  }
+    cloudflareToken: "",
+  },
 };
