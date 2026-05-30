@@ -264,17 +264,7 @@ button:hover,
 }
 
 .edit-link {
-  position: fixed;
-  right: 14px;
-  bottom: 14px;
-  padding: 8px 10px;
-  border: 1px solid var(--line-strong);
-  border-radius: 8px;
-  background: var(--panel-strong);
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 800;
-  text-decoration: none;
+  display: none;
 }
 
 .editor {
