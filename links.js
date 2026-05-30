@@ -30,29 +30,22 @@ window.LINKS_CONFIG = {
   ],
   links: [
     {
-      title: "Featured project",
-      description:
-        "Swap this for the thing you most want people to click first.",
-      url: "https://example.com",
-      tag: "Project",
+      title: "Vanity Project",
+      description: "stand up special, recorded at FDR Post 923",
+      url: "https://www.youtube.com/watch?v=nNOr5U1nTj4",
+      tag: "VIDEO",
       image: {
-        src: "assets/avatar.svg",
+        src: "assets/link-assets/vanity-proj-thumb-card.jpg",
       },
     },
     {
-      title: "Writing or notes",
-      description:
-        "A good spot for a blog, newsletter, long post, or technical write-up.",
-      url: "https://example.com",
-      tag: "Writing",
-      icon: "W",
-    },
-    {
-      title: "Something fun",
-      description:
-        "Use this for a demo, playlist, experiment, talk, portfolio piece, or shop.",
-      url: "https://example.com",
-      tag: "Cool stuff",
+      title: "Mind of Mencia",
+      description: "No description has been added to this video.",
+      url: "https://www.youtube.com/watch?v=YPVuBRvOx4s",
+      tag: "VIDEO",
+      image: {
+        src: "assets/link-assets/mind-of-mencia-thumb-card.jpg",
+      },
     },
   ],
   analytics: {
